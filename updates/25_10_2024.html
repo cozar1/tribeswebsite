@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <title>The Tribes</title>
+</head>
+<body>
+    <header>
+        <h1>THE TRIBES</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../updates.html">updates</a></li>
+                <li><a href="../downloads.html">downloads</a></li>
+                <li><a href="../timeline.html">Timeline</a></li>
+            </ul>
+        </nav>
+    </header>
+    <indicator>Updates</indicator><br><br>
+    <main>
+        <div class="updates"> 
+            <a href="updates/23_10_2024.html">Added Vector Icons</a><date>(25/10/2024) </date><br>
+        </div> 
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2>
+                    Overview<br><br>
+                </h2>
+                <p class="description">
+                    Today I used inkscape to create vector icons for a couple of differant
+                    things.<br><br>
+                    I want this game to not include tons of icons and text that a few rpgs 
+                    and other games have because that kinda breaks the immersion. This isnt
+                    nessesarily a bad thing for all games and games like runescape or world
+                    of warcraft benfit from lots of information because of how complicated 
+                    the game is. however for my game, I wanted to creat an immersive survival
+                    experiance, to achieve this I am going to try to have very few text and icons
+                    and have optional icons and text toggleable in settings. There are going 
+                    to be a few inevitable things that Im going to need to make icons for such 
+                    as health so that is what I focused on today.
+                </p>
+            </div>
+
+            <div class="grid-item">
+                <img src="../files/25_10_2024/icons.png">
+                <h2>
+                    Icons I made 
+                </h2>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <video controls controlsList="nofullscreen">
+                    <source src="../files/25_10_2024/demonstration.mp4" type="video/mp4">
+                </video>
+                <h2>
+                    Keypress Demonstration
+                </h2>
+            </div>
+
+            <div class="grid-item">
+                <h2>
+                    keypresses<br><br>
+                </h2>
+                <div class="description">
+                    <p>I also coded a little feature that detects keypresses and displays them in 
+                        the bottom right of the screen; Many differant software do this and I though
+                        it looked kinda cool. Im probably going to add it as an optional setting.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="../files/25_10_2024/keypresses code.png">
+                <h2>
+                    Main code
+                </h2>
+                <img src="../files/25_10_2024/template code.png">
+                <h2>
+                    Templates code
+                </h2>
+            </div>
+
+            <div class="grid-item">
+                <h2>
+                    Keypresses - Coding<br><br>
+                </h2>
+                <div class="description">
+                    <p>
+                        I have learned quite a bit about instantiating in godot over the span of creating
+                        this game and this allowed me to use this (in my opinon) intuitive way of adding
+                        the icosn to a grid container. First I created a template scene that I could instantite
+                        and when a button is presses ingame a function is called with the key image being 
+                        passed into it. the function instantiates the template scene, sets its image to
+                        the passed variable scene and adds it as a child of the grid-container which sorts
+                        out the positioning. in the template script it simply kills itself after half a seccond
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        
+    </main>
+    <footer>
+        <a href="../updates.html">Back</a>
+        <p>&copy; 2024 Your Game Title</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 50;
+}
+
+body {
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    background-size: cover;
+    background-position: center; /* Positions the background image in the center */
+    align-items: normal;
+    font-family: 'Hanalei Fill', cursive;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("files/render.png");
+    color: #cfc6b8;
+    font-weight: 0;
+}
+
+indicator {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0px 2px 4px #000000;
+    color: #ebede9;
+}
+
+header {
+    text-align: center;
+    font-size: 35px;
+    color: #ebede9;
+    padding: 1rem 0;
+    text-align: center;
+    text-shadow: 0px 2px 4px #000000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav a {
+   color: #cfc6b8;
+   text-decoration: none;
+}
+
+
+
+main {
+    align-items: center;
+    grid-template-columns: auto;
+    
+    color: #fff; /* White text (or any content inside) */
+    align-self: center;
+    flex: 1;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; /* This restricts the width to a maximum */
+    width: 90%; /* This gives it 90% width of the viewport */
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 3px dashed #a0938e;
+    border-radius: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #ebede9;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; /* This restricts the width to a maximum */
+    width: 90%; /* This gives it 90% width of the viewport */
+}
+
+a {
+    text-decoration: dotted;
+    font-size: 35px;
+    color: #ebede9;
+    transition-timing-function: ease-in-out;
+    transition: 0.3s ease; /* Smooth transition */
+}
+
+a:hover {
+    text-shadow: 0px 4px 12px #000000; /* Increase shadow depth */
+}
+
+.description {
+    text-shadow: 0px 2px 4px #000000;
+    color: #cfc6b8;
+    font-family: cursive;
+    font-weight: 200;
+}
+
+.updates {
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    transition: .3s;
+}
+
+.updates:hover {
+    scale: 110%;
+}
+
+.updates date {
+    font-size: 20px;
+    text-shadow: 0px 2px 4px #000000;
+    color: #a0938e;
+    float: right;
+}
+
+h1, h2 {
+    text-shadow: 0px 2px 4px #000000;
+    color: #ffffff; /* Title color */
+}
+
+/* Title Hover Effect */
+header h1 {
+    transition: 0.3s ease; /* Smooth transition */
+}
+
+header h1:hover {
+    color: #ffffff; /* Change color on hover */
+    text-shadow: 0px 4px 12px #000000; /* Increase shadow depth */
+}
+
+.grid-container {
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    margin: 10px 10px 10px 10px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .wiki-grid-container {
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    margin: 10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: 24.5% 24.5% 24.5% 24.5% ;
+    gap: 8px;
+    text-align: center;
+  }
+
+.wiki-grid-item {
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    scale:100%;
+}
+
+.timeline {
+    text-align: center;
+}
+
+
+  .grid-container h3 {
+    text-align: center;
+    text-overflow:ellipsis;
+  }
+
+img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    transition: .3s;
+    border-radius: 10px;
+}
+
+img:hover {
+    scale: 150%;
+    outline: 10px solid;
+}
+
+.timeline date {
+    font-size: 20px;
+    text-shadow: 0px 2px 4px #000000;
+    color: #a0938e;
+    text-align: center;
+
+}
+
+.timeline p {
+    color: #394a50;
+}
+
+
+.wiki-title {
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    font-size: 35px;
+}
+
+.wiki-referances {
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.wiki-referances a {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    font-size: 20px;
+    font-style: italic;
+    color: #a0938e;
+}
+
+video {
+    border-radius: 10px;
+    height: 90%;
+    width: 90%;
+    transition: .3s ease-in-out;
+    box-sizing: border-box;
+}
+h2 {
+    color: #ebede9;
+}
